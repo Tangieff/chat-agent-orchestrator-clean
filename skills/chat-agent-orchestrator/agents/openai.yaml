@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chat Agent Orchestrator"
+  short_description: "Discuss, prepare, and run projects from Chat"
+  default_prompt: "Use $chat-agent-orchestrator to discuss my project, prepare its structure directly, choose Python, shell tools, or local agents for each stage, coordinate the work, and deliver a verified result."

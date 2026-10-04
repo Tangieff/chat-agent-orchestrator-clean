@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-label="Chat Agent Orchestrator by Tangieff">
+  <rect width="1600" height="620" rx="28" fill="#F7F4EB"/>
+  <circle cx="1450" cy="0" r="295" fill="#E1E7FB"/>
+  <path d="M0 551H1600M1130 0V620" stroke="#D5D7D0"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="74" y="76" fill="#2455F5" font-size="20" font-weight="700" letter-spacing="2.5">SAVE AGENT BUDGET FOR EXECUTION</text>
+    <text x="68" y="208" fill="#17231F" font-size="103" font-weight="800" letter-spacing="-6">Chat Agent</text>
+    <text x="68" y="318" fill="#17231F" font-size="103" font-weight="800" letter-spacing="-6">Orchestrator.</text>
+    <text x="75" y="388" fill="#626A66" font-size="29">Discuss. Set up. Orchestrate.</text>
+    <text x="75" y="430" fill="#626A66" font-size="29">Keep the whole workflow in Chat.</text>
+    <rect x="75" y="475" width="820" height="47" rx="23.5" fill="#2455F5"/>
+    <text x="102" y="505" fill="#FFFFFF" font-size="21" font-weight="700">CHATGPT CHAT  →  REMOTE DESKTOP COMMANDER  →  YOUR COMPUTER</text>
+    <text x="75" y="593" fill="#17231F" font-size="22" font-weight="700">TANGIEFF</text>
+    <text x="1180" y="593" fill="#626A66" font-size="18">SKILL / GUIDE / DEMOS</text>
+    <g transform="rotate(-5 1310 204)">
+      <rect x="1130" y="120" width="365" height="175" rx="22" fill="#2455F5"/>
+      <text x="1162" y="175" fill="#FFFFFF" font-size="19" letter-spacing="2">01 / DISCUSS + PREPARE</text>
+      <text x="1160" y="226" fill="#FFFFFF" font-size="34" font-weight="700">One conversation.</text>
+    </g>
+    <g transform="rotate(5 1294 389)">
+      <rect x="1095" y="295" width="390" height="185" rx="22" fill="#F16B3A"/>
+      <text x="1127" y="353" fill="#17231F" font-size="19" letter-spacing="2">02 / SET UP + EXECUTE</text>
+      <text x="1125" y="408" fill="#17231F" font-size="36" font-weight="700">Your computer.</text>
+      <text x="1127" y="448" fill="#17231F" font-size="22">Python · Shell · Local agents</text>
+    </g>
+  </g>
+</svg>

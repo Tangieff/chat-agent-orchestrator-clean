@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chat-agent-orchestrator",
+  "version": "1.1.0",
+  "description": "Save coding-agent limits on preparation and orchestration: discuss, set up, run, and review projects from Chat through Remote Desktop Commander.",
+  "author": {
+    "name": "Tangieff",
+    "url": "https://github.com/Tangieff"
+  },
+  "homepage": "https://github.com/Tangieff/chat-agent-orchestrator",
+  "repository": "https://github.com/Tangieff/chat-agent-orchestrator",
+  "keywords": [
+    "chatgpt",
+    "orchestration",
+    "agent-skills",
+    "desktop-commander",
+    "python",
+    "claude-code",
+    "codex"
+  ]
+}

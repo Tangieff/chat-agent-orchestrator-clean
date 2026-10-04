@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="editorial">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus Kit — Make room for your best work.</title>
+<meta name="description" content="Focus Kit is a calm workspace for independent developers and designers. Make room for your best work.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="logo">Focus Kit<span class="logo-dot">.</span></a>
+
+    <div class="theme-switch" role="group" aria-label="Theme">
+      <span class="theme-switch-label" id="theme-label">Theme</span>
+      <button type="button" class="theme-btn" id="theme-toggle" aria-pressed="false" aria-describedby="theme-label">
+        <span class="theme-btn-track" aria-hidden="true">
+          <span class="theme-btn-thumb"></span>
+        </span>
+        <span class="theme-btn-text" id="theme-btn-text">Editorial</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="top" class="hero wrap">
+    <p class="kicker">For independent developers &amp; designers working alone, on purpose</p>
+
+    <h1 class="hero-title">
+      Make room for<br>
+      <span class="hero-emph">your best work.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Focus Kit is a calm workspace that clears the noise between you and the thing
+      you're actually trying to build. No dashboards to manage. No metrics to feed.
+      Just a quiet session, a timer, and the work.
+    </p>
+
+    <div class="hero-actions">
+      <button type="button" class="btn-primary" id="open-session">
+        Try a focus session
+      </button>
+      <a class="quiet-link" href="#how">See how it works</a>
+    </div>
+
+    <p class="hero-footnote">Runs entirely in this page — nothing to install, nothing to sync.</p>
+  </section>
+
+  <section id="how" class="how wrap">
+    <div class="how-rule" aria-hidden="true"></div>
+    <div class="how-grid">
+      <h2 class="how-title">One session.<br>Three quiet parts.</h2>
+      <ol class="how-list">
+        <li>
+          <span class="how-index">01</span>
+          <h3>Set a length</h3>
+          <p>Choose 15, 25, or 45 minutes — whatever matches the shape of the task in front of you.</p>
+        </li>
+        <li>
+          <span class="how-index">02</span>
+          <h3>Name the work</h3>
+          <p>One line describing what "done" looks like. It keeps the session honest.</p>
+        </li>
+        <li>
+          <span class="how-index">03</span>
+          <h3>Begin</h3>
+          <p>The timer runs. Everything else can wait until it's finished.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="quote wrap">
+    <blockquote>
+      <p>"The work expands to fill the space you give it noise to occupy. Focus Kit just gives it less room to do that in."</p>
+      <footer>— from the Focus Kit field notes</footer>
+    </blockquote>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Focus Kit — built for people who work alone, on purpose.</p>
+    <a class="quiet-link" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<div class="panel-overlay" id="panel-overlay" hidden>
+  <div class="session-panel"
+       id="session-panel"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="panel-title"
+       tabindex="-1">
+
+    <div class="panel-head">
+      <h2 id="panel-title">Focus session</h2>
+      <button type="button" class="panel-close" id="panel-close" aria-label="Close focus session">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="panel-body">
+
+      <div class="panel-setup" id="panel-setup">
+        <label class="field-label" for="session-intent">What are you working on?</label>
+        <input type="text" id="session-intent" class="field-input" placeholder="e.g. Finish the onboarding flow" maxlength="80">
+
+        <span class="field-label">Session length</span>
+        <div class="length-options" role="radiogroup" aria-label="Session length">
+          <button type="button" class="length-btn" data-minutes="15" role="radio" aria-checked="false">15 min</button>
+          <button type="button" class="length-btn is-selected" data-minutes="25" role="radio" aria-checked="true">25 min</button>
+          <button type="button" class="length-btn" data-minutes="45" role="radio" aria-checked="false">45 min</button>
+        </div>
+
+        <button type="button" class="btn-primary panel-start" id="start-session">Begin session</button>
+      </div>
+
+      <div class="panel-active" id="panel-active" hidden>
+        <p class="active-intent" id="active-intent"></p>
+
+        <div class="timer-display" role="timer" aria-live="off">
+          <span id="timer-time">25:00</span>
+        </div>
+
+        <p class="timer-status" id="timer-status" aria-live="polite">Ready when you are.</p>
+
+        <div class="timer-controls">
+          <button type="button" class="btn-secondary" id="timer-pause">Pause</button>
+          <button type="button" class="btn-ghost" id="timer-reset">Start over</button>
+        </div>
+      </div>
+
+      <div class="panel-done" id="panel-done" hidden>
+        <p class="done-heading">Session complete.</p>
+        <p class="done-sub" id="done-sub"></p>
+        <button type="button" class="btn-primary" id="done-restart">Start another</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
